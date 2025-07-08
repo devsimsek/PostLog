@@ -1,0 +1,34 @@
+# Build and IDE files
+cmake-build-debug/
+CMakeFiles/
+CMakeCache.txt
+build.ninja
+cmake_install.cmake
+.cmake
+.ninja_deps
+.ninja_log
+libPostLog.a
+PostLogTests
+.idea/
+.zed/
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.out
+*.log
+*.swp
+.DS_Store
+# OS and editor files
+*.user
+*.suo
+*.VC.db
+*.vscode/
+# Backup files
+*~
+*.bak
+*.tmp
+# Test output
+/test_logs
+
