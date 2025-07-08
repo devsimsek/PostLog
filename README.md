@@ -41,7 +41,7 @@ int main() {
     pqxx::connection conn("dbname=PostLog user=PostLog");
     PostLog::DatabaseSink dbSink(&conn, "logs");
     dbSink.setup();
-    dbSink.log({"Hello, world!", "INFO", std::to_string(time(nullptr))});
+    dbSink.log({"Hello, world!", PostLog::LogLevel::Info, std::to_string(time(nullptr))});
 }
 ```
 
