@@ -1,14 +1,17 @@
 # PostLog
 
-PostLog is a simple, extensible C++ logging library with support for console and PostgreSQL database sinks. It is designed for easy integration into C++ projects that require structured logging and persistent log storage.
+PostLog is a simple, extensible C++ logging library with support for console and PostgreSQL database sinks. It is
+designed for easy integration into C++ projects that require structured logging and persistent log storage.
 
 ## Features
+
 - Log to console or PostgreSQL database
 - Pluggable sink architecture (add your own sinks)
 - Simple API for logging messages with levels and timestamps
 - Easy setup for database tables
 
 ## Requirements
+
 - C++20 or newer
 - [libpqxx](https://github.com/jtv/libpqxx) (PostgreSQL C++ client library)
 - PostgreSQL server (for database logging)
@@ -17,17 +20,18 @@ PostLog is a simple, extensible C++ logging library with support for console and
 
 ## Building
 
+To build the project, use the provided script:
+
 ```sh
-# Clone the repository
-https://github.com/devsimsek/PostLog.git
-cd PostLog
-
-# Create a build directory and configure with CMake
-cmake -S . -B cmake-build-debug -G Ninja
-
-# Build the project
-cmake --build cmake-build-debug
+./build.sh
 ```
+
+This script will:
+
+- Remove any existing `cmake-build-debug` directory
+- Generate the build system with CMake and Ninja
+- Build the project
+- Place all build artifacts in `cmake-build-debug/`
 
 ## Usage Example
 
@@ -46,13 +50,16 @@ int main() {
 ```
 
 ## Project Structure
+
 - `PostLog.h` / `PostLog.cpp`: Library source code
 - `tests.cpp`: Example and test usage
 - `CMakeLists.txt`: Build configuration
 - `cmake-build-debug/`: Build artifacts (auto-generated)
 
 ## Author
+
 [github.com/devsimsek](https://github.com/devsimsek)
 
 ## License
+
 [Mit License](LICENSE)
